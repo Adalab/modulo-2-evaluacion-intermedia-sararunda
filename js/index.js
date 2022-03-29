@@ -19,13 +19,13 @@ function handleClick() {
   const amountWagered = parseInt(howMuchMoney.value);
   console.log(accumulatedMoney.innerHTML);
   if (userOptionNum === computerOptionNum) {
-    winnerGame.innerHTML = "¡Has ganado el doble de lo apostado! :)";
+    winnerGame.innerHTML = `¡Has ganado el doble de lo apostado! <i class="fa-solid fa-face-laugh-beam"></i>`;
     const saldoSum = saldo + amountWagered * 2;
     accumulatedMoney.innerHTML = `Saldo: ${saldoSum}`;
   } else {
-    winnerGame.innerHTML = "¡Has perdido lo apostado! :(";
+    winnerGame.innerHTML = `¡Has perdido lo apostado! <i class="fa-solid fa-face-sad-cry"></i>`;
     const saldoRest = saldo - amountWagered;
-    accumulatedMoney.innerHTML = `Saldo: ${saldoRest}`;
+    accumulatedMoney.innerHTML = `Saldo: ${saldoRest} <i class="fa-solid fa-sack-dollar"></i>`;
   }
 }
 

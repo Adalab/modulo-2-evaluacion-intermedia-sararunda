@@ -1,0 +1,47 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    background-color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.title {
+    color: palevioletred;
+    border: solid 1px brown;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 80px;
+
+}
+
+.select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.money {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.lets-play {
+    color: brown;
+}

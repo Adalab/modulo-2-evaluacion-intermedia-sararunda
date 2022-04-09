@@ -32,6 +32,7 @@ function handleClick() {
 playBtn.addEventListener('click', handleClick);
 //reset partida
 function handleClickReset() {
-  howMuchMoney = '';
+  howMuchMoney.value = '';
+  selectOption.value = '';
 }
 resetBtn.addEventListener('click', handleClickReset);

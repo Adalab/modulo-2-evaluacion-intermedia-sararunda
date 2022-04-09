@@ -20,19 +20,18 @@ function handleClick() {
   let amountWagered = parseInt(howMuchMoney.value);
   if (userOptionNum === computerOptionNum) {
     winnerGame.innerHTML = `¡Has ganado el doble de lo apostado! <i class="fa-solid fa-face-laugh-beam"></i>`;
-    const saldoSum = saldo + amountWagered * 2;
-    accumulatedMoney.innerHTML = `Saldo: ${saldoSum}`;
+    saldo = saldo + amountWagered * 2;
+    accumulatedMoney.innerHTML = `Saldo: ${saldo}`;
   } else {
     winnerGame.innerHTML = `¡Has perdido lo apostado! <i class="fa-solid fa-face-sad-cry"></i>`;
-    const saldoRest = saldoSum - amountWagered;
-    accumulatedMoney.innerHTML = `Saldo: ${saldoRest} <i class="fa-solid fa-sack-dollar"></i>`;
+    saldo = saldo - amountWagered;
+    accumulatedMoney.innerHTML = `Saldo: ${saldo} <i class="fa-solid fa-sack-dollar"></i>`;
   }
 }
 
 playBtn.addEventListener('click', handleClick);
-
+//reset partida
 function handleClickReset() {
   howMuchMoney = '';
 }
 resetBtn.addEventListener('click', handleClickReset);
-//reset partida
